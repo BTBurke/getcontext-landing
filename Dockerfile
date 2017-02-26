@@ -6,7 +6,8 @@ RUN wget https://s3.amazonaws.com/context-public/caddy.tar.gz
 RUN tar -xvzf caddy.tar.gz
 RUN mv caddy /usr/local/bin/caddy
 
-RUN git clone https://github.com/BTBurke/getcontext-landing /site
+RUN mkdir -p /site
+ADD . /site
 
 VOLUME /root/.caddy
 

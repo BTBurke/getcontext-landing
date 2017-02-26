@@ -3,9 +3,6 @@ https://getcontext.io, https://www.getcontext.io {
     root /site/dist
     log stdout
     ext .html
-    rewrite {
-        to {path} /
-    }
     git {
         repo github.com/BTBurke/getcontext-landing
         branch master
