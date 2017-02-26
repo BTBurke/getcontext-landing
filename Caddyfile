@@ -2,6 +2,7 @@ https://getcontext.io, https://www.getcontext.io {
     gzip
     root /site/dist
     log stdout
+    ext .html
     rewrite {
         to {path} /
     }
