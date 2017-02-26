@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /root/.caddy
+  le:
+    image: logentries/docker-logentries
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: -t a044a19d-83f4-4f4e-97ee-64e99d971bbc

@@ -1,0 +1,14 @@
+https://getcontext.io, https://www.getcontext.io {
+    gzip
+    root /site/dist
+    log stdout
+    rewrite {
+        to {path} /
+    }
+    git {
+        repo github.com/BTBurke/getcontext-landing
+        branch master
+        hook /deploy ghf38fdsdlk7583flds
+        path /site
+    }
+}

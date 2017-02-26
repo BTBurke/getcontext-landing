@@ -1,0 +1,6 @@
+:3001 {
+gzip
+root dist/
+ext .html
+log stdout
+}
