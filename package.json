@@ -1,0 +1,18 @@
+{
+  "name": "prelaunch-landing",
+  "version": "1.0.0",
+  "description": "Pre-launch landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "hjs-dev-server",
+    "build": "webpack",
+    "deploy": "npm run build"
+  },
+  "author": "Bryan Burke",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}

@@ -1,0 +1,13 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$brand-primary:             #3C3D3D;
+$brand-success:             #0CB037;
+$brand-info:                $teal !default;
+$brand-warning:             $orange !default;
+$brand-danger:              $red !default;
+$brand-inverse:             $gray-dark !default;
+
+$navbar-light-color: #F8FBFC;
