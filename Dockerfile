@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
 MAINTAINER Bryan Burke <bryan@getcontext.io>
 
-RUN apt-get update && apt-get upgrade -y  && apt-get install -y wget git
-RUN wget https://github.com/mholt/caddy/releases/download/v0.9.5/caddy_linux_amd64.tar.gz
-RUN tar -xvzf caddy_linux_amd64.tar.gz
-RUN mv caddy_linux_amd64 /usr/local/bin/caddy
+RUN apt-get update && apt-get upgrade -y  && apt-get install -y curl git
+RUN curl https://caddyserver.com/download/build?os=linux&arch=amd64&features=cors%2Cgit > caddy.tar.gz
+RUN tar -xvzf caddy.tar.gz
+RUN mv caddy /usr/local/bin/caddy
 
 RUN git clone https://github.com/BTBurke/getcontext-landing /site
 
