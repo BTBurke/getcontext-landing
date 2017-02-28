@@ -21,6 +21,14 @@
    inkscape:export-ydpi="90">
   <defs
      id="defs5343">
+     <style type="text/css">
+       <![CDATA[
+       @font-face {
+          font-family: Orbitron;
+          src: url('https://fonts.googleapis.com/css?family=Orbitron');
+          }
+          ]]>
+      </style>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath4242">
