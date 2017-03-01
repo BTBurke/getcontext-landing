@@ -37,10 +37,10 @@ mixpanel.init("746fc28628e47ed041b37c03c9e9d718");</script><!-- end Mixpanel -->
                 <div class="collapse navbar-collapse pull-right-nav" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item navlink">
-                      <a class="nav-link navlink" href="#features">Features</a>
+                      <a class="nav-link navlink" href="/#features">Features</a>
                     </li>
                     <li class="nav-item navlink">
-                      <a class="nav-link navlink" href="#pricing">Pricing</a>
+                      <a class="nav-link navlink" href="/#pricing">Pricing</a>
                     </li>
                   </ul>
                   <span class="navbar-text nav-phone">
@@ -225,7 +225,7 @@ mixpanel.init("746fc28628e47ed041b37c03c9e9d718");</script><!-- end Mixpanel -->
                             $19<span class="price-month">/month</span>
                         </div>
                         <div class="feature-list">
-                            Every call comes with context <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="See previous customer interactions, website activity, and other data prior to answering the call"><i class="fa fa-info-circle"></i></a>
+                            Every call comes with context <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="" data-content="See previous customer interactions, website activity, and other data prior to answering the call"><i class="fa fa-info-circle"></i></a>
                         </div>
                         <div class="feature-list">
                             1 local or toll-free number
@@ -262,7 +262,7 @@ mixpanel.init("746fc28628e47ed041b37c03c9e9d718");</script><!-- end Mixpanel -->
                             Add additional local or toll-free numbers
                         </div>
                         <div class="feature-list">
-                            Track advertising campaign ROI <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="Track the source of visits to your site that result in a sales call"><i class="fa fa-info-circle"></i></a>
+                            Track advertising campaign ROI <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="" data-content="Track the source of visits to your site that result in a sales call"><i class="fa fa-info-circle"></i></a>
                         </div>
                         <div class="feature-list">
                             Set up extensions for each department or employee
@@ -293,16 +293,16 @@ mixpanel.init("746fc28628e47ed041b37c03c9e9d718");</script><!-- end Mixpanel -->
                             Integrate with your existing CRM or customer support system
                         </div>
                         <div class="feature-list">
-                            Lead scoring <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="Machine learning identifies high potential leads from their website and call activity"><i class="fa fa-info-circle"></i></a>
+                            Lead scoring <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="" data-content="Machine learning identifies high potential leads from their website and call activity"><i class="fa fa-info-circle"></i></a>
                         </div>
                         <div class="feature-list">
-                            Advanced call tracking with speaker recognition <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="Automatically identify the customer and sales/support representative by the sound of their voice"><i class="fa fa-info-circle"></i></a>
+                            Advanced call tracking with speaker recognition <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="" data-content="Automatically identify the customer and sales/support representative by the sound of their voice"><i class="fa fa-info-circle"></i></a>
                         </div>
                         <div class="feature-list">
                             Call queueing
                         </div>
                         <div class="feature-list">
-                            API access and data warehousing <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="Export call tracking and analytics data or ship continuously to your own storage solution"><i class="fa fa-info-circle"></i></a>
+                            API access and data warehousing <a tabindex="0" class="info-bubble" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="" data-content="Export call tracking and analytics data or ship continuously to your own storage solution"><i class="fa fa-info-circle"></i></a>
 
                         </div>
                         <div class="feature-list">
@@ -453,12 +453,13 @@ mixpanel.init("746fc28628e47ed041b37c03c9e9d718");</script><!-- end Mixpanel -->
 
 </div>
 </section>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script>
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
+      console.log("scroll");
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
