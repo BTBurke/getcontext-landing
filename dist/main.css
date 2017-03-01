@@ -6367,20 +6367,42 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding-top: 5rem;
   padding-bottom: 2.5rem; }
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.close-cta {
+  width: 60%;
+  flex-grow: 2; }
+  @media (max-width: 768px) {
+    .close-cta {
+      width: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      flex-grow: 0; } }
+
 .hidden-from-view {
   right: -5000px;
   left: auto;
   display: none; }
 
 .contact-box {
-  text-align: center;
-  width: 40%;
-  margin: auto; }
+  margin-left: 2.5rem;
+  width: 20%;
+  flex-grow: 1; }
+  @media (max-width: 768px) {
+    .contact-box {
+      width: 100%;
+      flex-grow: 0;
+      margin: auto;
+      margin-left: 1rem;
+      margin-top: 3rem; } }
 
 .contact-item {
   text-align: left;
   color: #fff;
-  width: 40%;
   margin: auto;
   padding-bottom: .75rem; }
   .contact-item a {
