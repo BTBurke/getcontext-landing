@@ -80,6 +80,13 @@ $fill-color: #fff;
 
 .pull-right-nav {
 	margin-left: 45%;
+
+  @media (max-width: 768px) {
+    margin-left: 15%;
+  }
+  @media (max-width: 1120px) {
+    margin-left: 25%;
+  }
 }
 
 .mobile-navlinks {
@@ -103,9 +110,15 @@ $fill-color: #fff;
     }
   }
 }
-.hero {
-  //background: #F8FBFC;
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
+
+
 .nav-spacer {
   padding-right: 70px;
   font-size: 1.05rem;
@@ -114,12 +127,26 @@ $fill-color: #fff;
 
 .header-cta {
   max-height: 14rem;
-  //  width: 80%;
-  margin: auto;
-  margin-bottom: 2.5rem;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 9.5rem;
+  margin-right: -5%;
+  //margin-left: 5%;
+  padding-bottom: 0;
   text-align: left;
+  @media (max-width: 544px) {
+    text-align: center;
+    width: 100%;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 9.5rem;
+  }
   @media (max-width: 768px) {
     text-align: center;
+    width: 100%;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   margin-top: 5rem;
   color: #3C3D3D;
@@ -142,67 +169,26 @@ $fill-color: #fff;
     }
   }
 }
-.handwrite, .handwrite-small-screen {
-  display: block;
-  position: relative;
-  @media (max-width: 768px) {
-    display: none;
-  }
-  width: 100%;
 
-  .handwrite__img {
-    margin-top: 1rem;
-    width: 50%;
-    float: right;
-    //margin-left: auto;
-  }
-}
-
-.handwrite-small-screen {
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-  }
-  .handwrite-small-screen__img {
-    margin-top: 18rem;
-    width: 50%;
-    float: left;
-    //margin-left: auto;
-  }
-}
 
 .screenshot {
-  background: no-repeat url('../assets/phone-shot.svg');
+  background: no-repeat url('assets/phone-shot-w-lettering.embed.svg');
   background-size: contain;
   background-position: center bottom;
-  width: 100%;
-  min-height: 32rem;
-  margin: auto;
-  margin-top: 2rem;
-  //margin-bottom: 2rem;
+  width: 45%;
+  margin-right: 5%;
+  margin-left: -10%;
+  min-height: 16rem;
 
-  @media (max-width: 544px) {
-    min-height: 10rem;
-    margin-left: 5rem;
-    width: 100%;
-  }
 
   @media (max-width: 768px) {
-    min-height: 15rem;
-    margin-left: 5rem;
-    width: 100%;
+    margin: 0;
+    width: 80%;
+    min-height: 26rem;
   }
 
-  @media (max-width: 992px) {
-    min-height: 20rem;
-    width: 100%;
-  }
-
-  @media (max-width: 1140px) {
-    min-height: 25rem;
-    width: 100%;
-  }
 }
+
 
 .section-2 {
   width: 100%;

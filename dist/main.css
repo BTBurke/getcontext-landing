@@ -6046,6 +6046,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .pull-right-nav {
   margin-left: 45%; }
+  @media (max-width: 768px) {
+    .pull-right-nav {
+      margin-left: 15%; } }
+  @media (max-width: 1120px) {
+    .pull-right-nav {
+      margin-left: 25%; } }
 
 .mobile-navlinks {
   color: #fff;
@@ -6064,21 +6070,42 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     .mobile-navlinks a:hover {
       text-decoration: none; }
 
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; }
+
 .nav-spacer {
   padding-right: 70px;
   font-size: 1.05rem; }
 
 .header-cta {
   max-height: 14rem;
-  margin: auto;
-  margin-bottom: 2.5rem;
+  height: 100%;
+  width: 50%;
+  margin-bottom: 9.5rem;
+  margin-right: -5%;
+  padding-bottom: 0;
   text-align: left;
   margin-top: 5rem;
   color: #3C3D3D;
   font-size: 1.25rem; }
+  @media (max-width: 544px) {
+    .header-cta {
+      text-align: center;
+      width: 100%;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 9.5rem; } }
   @media (max-width: 768px) {
     .header-cta {
-      text-align: center; } }
+      text-align: center;
+      width: 100%;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem; } }
   .header-cta .subhead {
     width: 100%; }
   .header-cta h1 {
@@ -6092,54 +6119,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       text-align: center;
       color: #3C3D3D; }
 
-.handwrite, .handwrite-small-screen {
-  display: block;
-  position: relative;
-  width: 100%; }
-  @media (max-width: 768px) {
-    .handwrite, .handwrite-small-screen {
-      display: none; } }
-  .handwrite .handwrite__img, .handwrite-small-screen .handwrite__img {
-    margin-top: 1rem;
-    width: 50%;
-    float: right; }
-
-.handwrite-small-screen {
-  display: none; }
-  @media (max-width: 768px) {
-    .handwrite-small-screen {
-      display: block; } }
-  .handwrite-small-screen .handwrite-small-screen__img {
-    margin-top: 18rem;
-    width: 50%;
-    float: left; }
-
 .screenshot {
-  background: no-repeat url("../assets/phone-shot.svg");
+  background: no-repeat url("assets/phone-shot-w-lettering.embed.svg");
   background-size: contain;
   background-position: center bottom;
-  width: 100%;
-  min-height: 32rem;
-  margin: auto;
-  margin-top: 2rem; }
-  @media (max-width: 544px) {
-    .screenshot {
-      min-height: 10rem;
-      margin-left: 5rem;
-      width: 100%; } }
+  width: 45%;
+  margin-right: 5%;
+  margin-left: -10%;
+  min-height: 16rem; }
   @media (max-width: 768px) {
     .screenshot {
-      min-height: 15rem;
-      margin-left: 5rem;
-      width: 100%; } }
-  @media (max-width: 992px) {
-    .screenshot {
-      min-height: 20rem;
-      width: 100%; } }
-  @media (max-width: 1140px) {
-    .screenshot {
-      min-height: 25rem;
-      width: 100%; } }
+      margin: 0;
+      width: 80%;
+      min-height: 26rem; } }
 
 .section-2 {
   width: 100%;
